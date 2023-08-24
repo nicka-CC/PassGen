@@ -6,13 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
      <link rel="stylesheet" href="design.css"> 
 </head>
 
 <body>
-    <div class="wrapper">
-        <button id="generate" class="action-btn">
+    <div class="object">
+        <button id="generate" class="button_genpas">
             Generate Password 
         </button>
         <div class="slider_main">
@@ -20,7 +19,7 @@
                 oninput="this.nextElementSibling.value = this.value" id="slider">
             <output>8</output>
         </div>
-        <label class="container" style="font-family: fantasy;color: rgb(3, 3, 3);">Include special characters
+        <label class="container" style="color: rgb(3, 3, 3);">Include special characters
             <input type="checkbox" checked="checked" id="checkbox">
             <span class="checkmark"></span>
         </label>
@@ -28,9 +27,9 @@
 
 
 
-    <div class="wrapper_main">
-        <h5 id="pwd_txt"></h5>
-        <button id="clipboard" class="clipboard">clear
+    <div class="object_main">
+        <h5 id="pwd_txt" style="font-size: 19px; margin: 3%"></h5>
+        <button id="clipboard" class="clipboard">copy
             <i class="fas fa-clipboard"></i>
         </button>
     </div>
